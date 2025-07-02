@@ -4,12 +4,18 @@
    <title>Customers</title>
    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}" crossorigin="anonymous">
    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap4.min.css">
+   <style>
+    tr.clickable-row {
+        cursor: pointer;
+    }
+</style>
 </head>
 
 <body>
 
 <div class="container pt-5">
     <h4 class="mb-4">Customers</h4>
+    <p class="text-muted mb-4">Click on a row to view more details about a customer.</p>
 
     <table class="table table-hover table-striped table-bordered" id="customers-table">
         <thead class="thead-dark">
