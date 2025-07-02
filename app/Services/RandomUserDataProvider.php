@@ -12,7 +12,6 @@ class RandomUserDataProvider implements CustomerDataProviderInterface
         $url = config('customer_importer.api_url');
         logger()->info('API URL from config:', ['url' => $url]);
 
-        // 🔍 Quick fail-safe for debugging
         if (!$url) {
             throw new Exception('API URL is null. Check RANDOM_USER_API in .env and config.');
         }
