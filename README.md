@@ -16,7 +16,7 @@ A simple Laravel 12 application that uses **Doctrine ORM** to manage `Customer` 
 ## ⚙️ Setup Instructions
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/TheDrei/customer-importer.git
 cd customer-importer
 
 composer install
