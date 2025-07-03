@@ -1,6 +1,6 @@
 # Customer Importer App (Laravel 12 + Doctrine ORM)
 
-A simple Laravel 12 application that uses **Doctrine ORM** to manage `Customer` entities, demonstrating service-oriented architecture, clean code principles, RESTful APIs, and a modern UI with Bootstrap 5 and DataTables.
+A simple Laravel 12 application that uses **Doctrine ORM** to manage Customer entities, demonstrating service-oriented architecture, clean code principles, RESTful APIs, and a modern UI with Bootstrap 5 and DataTables.
 
 ## ✨ Features
 
@@ -19,12 +19,13 @@ A simple Laravel 12 application that uses **Doctrine ORM** to manage `Customer` 
 git clone https://github.com/TheDrei/customer-importer.git
 cd customer-importer
 
-composer install
+composer update
 cp .env.example .env
 php artisan key:generate
 
 # Set your DB connection in .env, then run:
 php artisan migrate
+php artisan doctrine:schema:create
 
 # 🔄 Import initial customer data
 php artisan import:customers
