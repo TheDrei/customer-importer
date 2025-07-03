@@ -9,7 +9,7 @@ A simple Laravel 12 application that uses **Doctrine ORM** to manage Customer en
 - ✅ Imports customers from [RandomUser API](https://randomuser.me/)
 - ✅ Configurable API URL in `config/customer_importer.php`
 - ✅ UI built with Blade, Bootstrap 5, and DataTables
-- ✅ RESTful API (`/customers`, `/customers/{email}`)
+- ✅ RESTful API (`/customers`, `/customers/{id}`)
 - ✅ Fully tested with fake API responses and isolated DB
 - ✅ Clear separation of concerns using SRP and dependency injection
 
